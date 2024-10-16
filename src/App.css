@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+body{
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+}
+.innerBox{
+  max-width: 1920px;
+}
+.header-text{
+  color: #444444;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav_active{
+  color: #88B929;
+  transition: transform 0.3s;
+  transform: scale(1.07);
+}
+.header-text a{
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-text a:hover {
+  transform: scale(1.07)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav_leaf::after{
+  content: "";
+  background: url("https://techworld.speedgabia.com/seminar/ESG/img/leaf.png");
+  width: 20px;
+  height: 14px;
+  position: absolute;
+  top: -3px;
+  right: -5px;
+}
+.ttable{
+  max-width: 800px;
+  margin: auto;
+}
+.tableStyle{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ 
+}
+.survey{
+
+  border-radius: 10px;
+  /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); */
+  z-index: 10;
+}
+.survey > iframe {
+  padding-top: 40px;
+}
+.box{
+  position: relative;
+}
+.bg-image{
+  position: absolute;
+  left: 0;
+  top: -150px;
+  height: 463px;
+  max-width: 1920px;
+  z-index: 1;
+}
+.googleform{
+  position: relative;
+  z-index: 10;
+}
+.App{
+  max-width: 1920px;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
